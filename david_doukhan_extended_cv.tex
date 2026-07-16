@@ -61,6 +61,7 @@
 
 %tabularx environment
 \usepackage{tabularx}
+\usepackage{xltabular}
 
 %for lists within experience section
 \usepackage{enumitem}
@@ -243,7 +244,7 @@
 \href{https://linkedin.com/in/david-doukhan}{\raisebox{-0.05\height}\faLinkedin\ david-doukhan}
 %\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \
 
-\href{https://twitter.com/doukhan_david}{\raisebox{-0.05\height}\faTwitter \ doukhan\_david} \ $|$ \ 
+%\href{https://twitter.com/doukhan_david}{\raisebox{-0.05\height}\faTwitter \ doukhan\_david} \ $|$ \ 
 \href{mailto:david.doukhan@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ david.doukhan@gmail.com} \ $|$ \ 
 \href{tel:+33678789781}{\raisebox{-0.05\height}\faMobile \ +33.6.78.78.97.81} \\
 \end{tabularx}
@@ -281,6 +282,32 @@ Ce document contient quelques éléments de mon CV, ainsi que la liste exhaustiv
 
 
 \tableofcontents
+
+\pagebreak
+
+\begin{en}
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2009-2013 & Ph.D. in Computer Science under the supervision of Christophe D’Alessandro (LIMSI-CNRS) and Albert Rilliard (LIMSI-CNRS), Paris Sud University.\\
+2008-2009 & Master of Sciences ATIAM (Acoustics, Signal Processing and Computer Sciences applied to Music) co-hosted by University Pierre et Marie Curie (Paris VI), IRCAM, and Telecom Paris.\\
+2005 & Student Exchange Program in Indian Institute of Technology Kanpur (India). Validated courses: Indian Art And Civilization, Machine Learning, Signal Processing, Mathematics\\
+2001-2007 & EPITA (School of Engineering and Computer Science), major Artificial Intelligence and Machine Learning (SCIA). Graduated with honours (mention bien)\\
+2001 & Scientist Baccalaureat (A-level), major physic\\
+\end{tabularx}
+\end{en}
+
+
+\begin{fr}
+\section{Formation}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2009-2013 & Doctorat en Informatique sous la direction de Christophe D’Alessandro (LIMSI-CNRS) et Albert Rilliard (LIMSI-CNRS), Université Paris Sud.\\
+2008-2009 & Master Recherche ATIAM (Acoustique, Traitement du signal et Informatique Appliqués à la Musique) co-tutelle UPMC (Paris VI), IRCAM et Telecom Paris.\\
+2005 & \'Echange universitaire à l'Indian Institute of Technology Kanpur (Inde). Cours suivis: art et civilisation indienne, apprentissage automatique, traitement du signal, mathématiques\\
+2001-2007 & EPITA (Ecole pour l'informatique et les techniques avancées), majeure Intelligence Artificielle et Apprentissage Automatique (SCIA). Mention bien\\
+2001 & Baccalaureat Scientifique, option physique\\
+\end{tabularx}
+\end{fr}
+
 
 %% Experience
 \begin{en}
@@ -339,8 +366,13 @@ CNN implementation in Python for Cell Be parallel architectures : C, assembly, S
 
 \subsection{Recherche et Ingénierie}
 
-\begin{jobshort}{Chercheur en analyse de contenus audiovisuels à l'INA}{2016 - aujourd'hui}
-Responsable de la thématique analyse de la parole (2-3 stagiaires, doctorants ou ingénieurs), participation et coordination de projets de recherche nationaux et Européens, conception de logiciels d'analyse des contenus audiovisuels, études sur la représentation médiatique des femmes et des hommes, transfert des résultats de la Recherche vers la production ou vers des rapports gouvernementaux et non-gouvernementaux
+\begin{jobshort}{Responsable de projet Recherche audio/parole à l'INA}{2024 - aujourd'hui}
+Animation scientifique, encadrement de stagiaires, doctorants, ingénieurs et prestataires.
+\end{jobshort}
+
+
+\begin{jobshort}{Chercheur en analyse de contenus audiovisuels à l'INA}{2016-2024}
+Responsable de la thématique analyse de la parole, participation et coordination de projets de recherche nationaux et Européens, conception de logiciels d'analyse des contenus audiovisuels, études sur la représentation médiatique des femmes et des hommes, transfert des résultats de la Recherche vers la production ou vers des rapports gouvernementaux et non-gouvernementaux
 \end{jobshort}
 
 
@@ -447,7 +479,7 @@ Implémentation d'un framework de Réseaux de neurones convolutionnels (CNN) pou
 
 \begin{fr}
 \subsection{Encadrement de stages de recherche}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
+\begin{xltabular}{\linewidth}{@{}l X@{}}
 2026 & Marco Delany (Centrale Nantes, Informatique pour l'Intelligence Artificielle, France). Analyse des stéréotypes racistes et sexistes dans les contenus audiovisuels fondée sur l’utilisation de plongements lexicaux\\
 2026 & Arthur Dureau (Le Mans Université, Master Intelligence Artificielle, France), co-encadrant Valentin Pelloin. Approches multimodales pour la création de bases de locuteurs et locutrices à grande échelle\\
 2025 & Athène Rousseau Rambach (Université Catholique de Lille, License Sciences du Numérique, France), co-encadrant Kirill Milintsevich. Détection et caractérisation des références faites aux femmes et aux hommes dans les contenus audiovisuels\\
@@ -460,7 +492,7 @@ Implémentation d'un framework de Réseaux de neurones convolutionnels (CNN) pou
 2019 & Zohra Rezgui (University of Carthage - ESSAI - Tunisia). Détection et classification de visages pour la description de l’égalité femme-homme dans les archives télévisuelles\\
 2018 & Eliott Lechapt (UPMC - Polytech - France). Segmentation audio pour la description de l’égalité hommefemme dans les archives audiovisuelles à l’aide de réseaux de neurones profonds\\
 2017 & Boris Dupin (UMPC - Master SPI - France). Apprentissage actif pour la segmentation parole musique\\
-\end{tabularx}
+\end{xltabular}
 \end{fr}
 \begin{en}
 \subsection{Research internship supervision}
@@ -622,29 +654,6 @@ Programmation C et C++, Théorie de la compilation,  Mathématiques appliqués
 %% %	EDUCATION
 %% %----------------------------------------------------------------------------------------
 
-
-\begin{en}
-\section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2009-2013 & Ph.D. in Computer Science under the supervision of Christophe D’Alessandro (LIMSI-CNRS) and Albert Rilliard (LIMSI-CNRS), Paris Sud University.\\
-2008-2009 & Master of Sciences ATIAM (Acoustics, Signal Processing and Computer Sciences applied to Music) co-hosted by University Pierre et Marie Curie (Paris VI), IRCAM, and Telecom Paris.\\
-2005 & Student Exchange Program in Indian Institute of Technology Kanpur (India). Validated courses: Indian Art And Civilization, Machine Learning, Signal Processing, Mathematics\\
-2001-2007 & EPITA (School of Engineering and Computer Science), major Artificial Intelligence and Machine Learning (SCIA). Graduated with honours (mention bien)\\
-2001 & Scientist Baccalaureat (A-level), major physic\\
-\end{tabularx}
-\end{en}
-
-
-\begin{fr}
-\section{Formation}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2009-2013 & Doctorat en Informatique sous la direction de Christophe D’Alessandro (LIMSI-CNRS) et Albert Rilliard (LIMSI-CNRS), Université Paris Sud.\\
-2008-2009 & Master Recherche ATIAM (Acoustique, Traitement du signal et Informatique Appliqués à la Musique) co-tutelle UPMC (Paris VI), IRCAM et Telecom Paris.\\
-2005 & \'Echange universitaire à l'Indian Institute of Technology Kanpur (Inde). Cours suivis: art et civilisation indienne, apprentissage automatique, traitement du signal, mathématiques\\
-2001-2007 & EPITA (Ecole pour l'informatique et les techniques avancées), majeure Intelligence Artificielle et Apprentissage Automatique (SCIA). Mention bien\\
-2001 & Baccalaureat Scientifique, option physique\\
-\end{tabularx}
-\end{fr}
 
 
 
